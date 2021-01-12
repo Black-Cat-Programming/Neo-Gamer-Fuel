@@ -4,4 +4,17 @@
  * See: https://www.gatsbyjs.com/docs/node-apis/
  */
 
-// You can delete this file if you're not using it
+// const path = require("path");
+
+// const recipesDetail = path.resolve("./src/templates/recipe-single.js");
+// const allRecipes = "queryResults.data..."
+
+// allRecipe.forEach(Recipe => {
+//     createPage({
+//         path: ``,
+//         component: recipesDetail,
+//         context: {
+            
+//         }
+//     })
+// })
