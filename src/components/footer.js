@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import css from "../styles/global.css"
 
 
 
@@ -12,9 +11,10 @@ import css from "../styles/global.css"
 
 const Footer = ({children}) => {
     return(
-        <footer style={css.footerStyle}>
-            <p>Footer starts here</p>
-            <Link to="/">Back to top</Link>
+        <footer>
+            <div className="container">
+                <p>Made by BlackCatProgramming</p>
+            </div>
         </footer>
     )
 }

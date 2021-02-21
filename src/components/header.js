@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import css from "../styles/global.css"
+
+import logo from "../images/Gamer-Fuel-New-LOGO-03.png"
 
 const ListLink = props => (
     <li style={{ display: 'inline-block', marginRight: '1rem' }}>
@@ -10,15 +11,17 @@ const ListLink = props => (
 
 const Header = ({children}) => {
     return(
-        <header style={css.headerStyle}>
-            <Link to="/" style={{ textShadow: 'none', backgroundImage: 'none'}}>
-                <h3 style={{ display: 'inline' }}>Gamer Fuel</h3>
-            </Link>
-            <ul style={{ listStyle: 'none', float: 'right' }}>
-                <ListLink to="/about">About</ListLink>
-                <ListLink to="/all-recipes/">Recipes</ListLink>
-                <ListLink to="/login/">Log in</ListLink>
-            </ul>
+        <header>
+            <div className="container">
+                <Link to="/" className="logo">
+                    <img src={logo} alt="Gamer Fuel" />
+                </Link>
+                <ul>
+                    <li><Link to="/about/">About</Link></li>
+                    <li><Link to="/all-recipes/">Recipes</Link></li>
+                    <li><Link to="/login/">Log in</Link></li>
+                </ul>
+            </div>
         </header>
     )
 }
