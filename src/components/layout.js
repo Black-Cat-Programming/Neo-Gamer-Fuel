@@ -1,13 +1,18 @@
 import React from "react"
+import Header from "./header"
+import Footer from "./footer"
+
+import "../styles/global.scss"
 
 const Layout = ({ children }) => {
     return (
-        <div>
-            <p>Header can go here</p>
-            {children}
-            <p>Footer can go here</p>
+        <div className="layout">
+            <Header/>
+            <main>
+                {children}
+            </main>
+            <Footer/>
         </div>
-        
     )
 }
 
